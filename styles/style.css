@@ -5,16 +5,12 @@
     scroll-behavior: smooth;
 }
 
-body {
-    scroll-behavior: smooth;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 50px;
-    background-color: rgba(247, 245, 245, 0.628);
+    background-color: rgba(247, 245, 245, 1);
     box-shadow: rgb(72, 70, 70) 0px 2px 150px;
     position: sticky;
     top: 0;
@@ -283,6 +279,10 @@ header .logo p:nth-child(2) {
     text-decoration: none;
 }
 
+.causes-section { 
+    margin: 100px 0;
+}
+
 .causes-maindiv {
     display: flex;
     justify-content: space-evenly;
@@ -292,11 +292,30 @@ header .logo p:nth-child(2) {
 .causes-div {
     display: flex;
     flex-direction: column;
-    width: 30%;   
+    width: 30%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+.causes-div:hover {
+    box-shadow: gray 1px 1px 17px;
 }
 
 .causes-div img {
     width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.causes-div-middiv {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.causes-div button {
+    padding: 15px 0;
 }
 
 .poverty{
@@ -313,6 +332,7 @@ header .logo p:nth-child(2) {
     color: rgb(33, 85, 90);
     margin: 10px 0;
 }
+
 /* 
 .causes-div{
     border-top: 30px;
@@ -331,17 +351,29 @@ header .logo p:nth-child(2) {
     border: none;
 }
 
-.all-form{
+.all-form {
+    display: flex;
     background-color: gray;
     margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.all-form img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .form-header{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 550;
     color: white;
-    margin: 0 auto;
-    text-align: center;
+    margin: 10px auto;
+    /* text-align: center; */
 }
 
 .gen-form{
@@ -356,31 +388,157 @@ header .logo p:nth-child(2) {
 .form-body{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 50%;
-    margin: 0 auto;
+    gap: 30px;
+    /* align-items: center; */
+    /* margin: 0 auto; */
     border-radius: 20px;
     padding: 50px ;
 }
 
-.form-body input {
-    border: none;
-    background-color: lightblue;
-    padding: 10px 20px;
+.form-name-div,
+.form-2nd-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
-.button{
+.form-textarea-div {
+    display: flex;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+.form-body input,
+.form-body textarea {
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.form-body .button{
     text-align: center;
     border-radius: 30px;
     background-color: grey;
     padding: 10px 20px;
     color: white;
     border: none;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.form-body input {
+    padding: 15px 20px;
 }
 
 .form-body textarea{
     background-color: lightblue;
     resize: none;
-    padding: 10px 20px;
-    height: 50px;
+    padding: 20px 20px 60px 20px;
+    max-height: 50px;
+    max-width: 100%;
+}
+
+.col{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* max-width: 50%; */
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* max-width: 50%; */
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.all-form-2nd-div {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.about-volunteering {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.about-lorem {
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.main-holder {
+    display: flex;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.news{
+    color: grey;
+    margin: 20px 0px;
+    font-size: 50px;
+    font-weight: 500px;
+}
+
+.lifestyle img{
+    height: 400px;
+    width: 600px;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.area{
+    margin: 30px 0px;
+}
+
+.lorem-img1 p {
+    line-height: 20px;
+}
+
+.lcd{
+    background-color: grey;
+    width: 50%;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.lorem-img2 img{
+    height: 400px;
+    width: 600px;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.section21 img{
+    height:200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.section22 img{
+    height:200px;
+    width: 200px;
+    object-fit: cover;
 }
