@@ -1,0 +1,41 @@
+<div>
+    <div>
+        <div>
+            <h1>Get in touch</h1>
+            <div>
+             <img src="./images/image18.png">
+             <p>Clara Barton</p>
+             <p>HR & Office Manager</p>
+            </div>
+            <div>
+                <h3>contact information</h3>
+               <p>Akershusstranda 20, 0150 Oslo, Norway</p>
+               <p>120-240-9600</p>
+               <p>donate@charity.org</p>
+            </div>
+            <div>
+                <button type="button" onclick="alert('Hello world!')">Get direction</button>
+            </div>
+            <div>
+                <form>
+                    <p>contact form</p>
+                    <p>Or, you can just send an email: info@charity.org</p>
+                      <div>
+                          <input type="text" name="full-name" placeholder="Jack Doe">
+                          <input type="text" name="name" placeholder="Doe">
+                          <input type="email" name="email" placeholder="jackdoe@gmail.com">
+                      </div>
+                      <div>
+                          <input type="text" name="subject" placeholder="Subject">
+                      </div>
+                      <div>
+                          <textarea name="typemessage" placeholder="Comment (Optional)"></textarea>
+                      </div>
+                      <div>
+                          <button class="button" type="button" onclick="alert('Hello world!')">Submit</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
