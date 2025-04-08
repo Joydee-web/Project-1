@@ -15,7 +15,7 @@ header {
     box-shadow: rgb(72, 70, 70) 0px 2px 150px;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 9999;,k
 }
 
 header nav {
@@ -237,6 +237,38 @@ header .logo p:nth-child(2) {
     color: rgb(33, 85, 90); 
 }
 
+
+@media screen and (max-width: 700px) {
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile .img6 img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mission-holding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-holding div {
+        width: 100%;
+        text-align: center;
+    }
+    .mid-flexdiv {
+        width: 100%;
+        text-align: center;
+        align-self: center;
+    }
+}
+
+
+/* About Section Ends Here */
+
+/* Sandy Chan Starts here */
+
 .img7 img {
     width: 100%;
     height: 70%;
@@ -282,6 +314,27 @@ header .logo p:nth-child(2) {
     max-width: 83%;
 }
 
+@media screen and (max-width: 700px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .lorem {
+        max-width: 100%;
+    }
+    
+    .img7 img {
+        width: 400px;
+        height: 500px;
+    }
+}
+    
+/* Sandy Chan Ends here*/
+
+/* Make Impact Starts Here */
+
 .sec{
     display: flex;
     justify-content: space-evenly;
@@ -319,26 +372,17 @@ header .logo p:nth-child(2) {
 }
 
 @media screen and (max-width: 700px) {
-    .profile {
+    .sec {
         flex-direction: column;
     }
-
-    .profile .img6 img {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .mission-holding {
+    .sec2 {
         flex-direction: column;
-    }
-
-    .mission-holding div {
-        width: 100%;
     }
 }
 
+/* Make Impact Ends Here */
 
-/* About Section Ends Here */
+/* About causes section starts here */
 
 .causes-section { 
     margin: 100px 0;
@@ -412,135 +456,148 @@ header .logo p:nth-child(2) {
     border: none;
 }
 
-.all-form {
-    display: flex;
-    background-color: gray;
-    margin: 10px;
-    justify-content: space-between;
-    align-items: center;
+
+@media screen and (max-width: 700px) {
+    .causes-maindiv {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .causes-div {
+        width: 80%;
+    }
+}
+
+/* About causes section ends here */
+
+/* About form and volunteer starts here  */
+
+
+
+/* About form and volunteer ends here */
+
+.first-form {
     padding: 50px;
+    max-width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
     gap: 50px;
-}
-
-.all-form img {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.form-header{
-    font-size: 50px;
-    font-weight: 550;
     color: white;
-    margin: 10px auto;
-    /* text-align: center; */
 }
 
-.gen-form{
-    background-color: white;
-}
-
-.form-head{
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.form-body{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    /* align-items: center; */
-    /* margin: 0 auto; */
-    border-radius: 20px;
-    padding: 50px ;
-}
-
-.form-name-div,
-.form-2nd-div {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.form-textarea-div {
-    display: flex;
-    width: 100%;
-}
-
-input, textarea {
-    width: 100%;
-}
-
-.form-body input,
-.form-body textarea {
-    border: none;
-    background-color: lightblue;
-    border-radius: 5px;
-}
-
-.form-body .button{
-    text-align: center;
-    border-radius: 30px;
-    background-color: grey;
-    padding: 10px 20px;
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 15px 0;
-}
-
-.form-body input {
-    padding: 15px 20px;
-}
-
-.form-body textarea{
-    background-color: lightblue;
-    resize: none;
-    padding: 20px 20px 60px 20px;
-    max-height: 50px;
+.first-form-div {
     max-width: 100%;
 }
 
-.col{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    /* max-width: 50%; */
-    margin: 0 auto;
-    padding: 50px;
+.first-form-div h3 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0;
 }
 
-.col2{
+.first-form form {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    /* max-width: 50%; */
-    margin: 0 auto;
-    padding: 50px;
+    flex-direction: column;
+    max-width: 100%;
+    box-sizing: border-box;
+    gap: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
 }
 
-.all-form-2nd-div {
+.first-form-flexdiv {
     display: flex;
-    max-width: 50%;
+    gap: 15px;
+}
+
+.first-form form input {
+    padding: 15px 25px;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.first-form form textarea {
+    width: 100%;
+    padding: 20px 25px 50px 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: vertical;
+    max-height: 300px;
+    min-height: max-content;
+    scrollbar-width: none;
+    background-color: transparent;
+}
+
+.first-form form button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: all 700ms ease;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes spinner {
+    10% {transform: rotate(36deg);}
+    20% {transform: rotate(72deg);}
+    30% {transform: rotate(108deg);}
+    40% {transform: rotate(144deg);}
+    50% {transform: rotate(180deg);}
+    60% {transform: rotate(216deg);}
+    70% {transform: rotate(252deg);}
+    80% {transform: rotate(288deg);}
+    90% {transform: rotate(324deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.first-form form button:hover {
+    background-color: lightblue;
+}
+
+.first-form-2nd-div {
+    color: white;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-form-2nd-div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: fit-content;
 }
 
 .about-volunteering {
-    font-size: 27px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .about-lorem {
-    font-size: 17px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    text-align: center;
-    line-height: 23px;
+    /* width: 50%; */
+    letter-spacing: 0.7px;
+    font-size: 14px;
 }
+
+@media screen and (max-width: 979px) {
+    .first-form {
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+}
+
+/* About section1 starts here */
 
 .main-holder {
     display: flex;
@@ -642,7 +699,7 @@ input, textarea {
     background-color: lightblue;
     border: none;
     border-radius: 5px;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .recent{
@@ -651,6 +708,8 @@ input, textarea {
     margin: 40px 0px 20px 0px;
     color: green;
 }
+
+/* About section2 starts here */
 
 .section21{
     display: flex;
@@ -770,6 +829,29 @@ input, textarea {
     background-color: yellow;
 }
 
+@media screen and (max-width: 700px) {
+    .main-holder {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .lifestyle {
+        width: 100%;
+    }
+    /* .lifestyle image12 {
+        width: 100%;
+    }  */
+      .lorem-img1 {
+        width: 100%;
+      }
+      .lorem-img2 {
+        width: 100%;
+      }
+}
+
+/* About section ends here */
+
+/* About another-sec starts */
+
 .another-sec{
     background-color: lightblue;
     padding: 30px 0;
@@ -828,6 +910,23 @@ input, textarea {
     border-radius: 30px;
 }
 
+@media screen and (max-width: 700px) {
+    .customer {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .sedomg {
+        padding: 0 25px;
+    }
+
+    .sed, .omg {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* About another-sec ends here */
 
 .formheader{
     font-size: 50px;
@@ -896,18 +995,87 @@ input, textarea {
     font-size: 17px;
 }
 
-.contact-form {
-    background-color: lightblue;
+.second-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.second-form form {
+    background: lightblue;
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.second-form form div {
+    display: flex;
+    gap: 10px;
+}
+
+.second-form form input {
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-self: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.second-form form textarea {
+    padding: 15px 25px 65px 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+    resize: none;
+}
+
+.second-form textarea {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.second-form form button {
+    width: 100%;
+    border: none;
+    padding: 15px 25px;
     background-color: white;
+    border-radius: 15px;
+    transition: all 700ms ease;
+}
+
+
+.second-form form button:hover {
+    background-color: lightgrey;
+}
+
+.second-form form input:focus,
+.second-form form input:active {
+    outline: none;
+    border: 1px solid black;
 }
 
 .imglogo img{
     height: 80px;
     width: 80px;
+}
+
+@media  screen  and (max-width: 700px)  {
+    .second-form {
+        flex-direction: column-reverse !important;
+        padding: 30px !important;
+        gap: 100px;
+    }
+
+    .bf-contact {
+        width: 100%;
+    }
 }
 
 footer {
@@ -977,4 +1145,28 @@ footer nav a button {
 
 footer div h2 {
     color: #58b49e;
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        padding: 30px 0 0 0;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .footer-top-flexdiv {
+        flex-direction: column;
+        height: max-content;
+        align-items: start;
+    }
+
+    .footer-nav-flexdiv {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-bottom-flexdiv {
+        flex-direction: column;
+        height: max-content;
+    }
 }
