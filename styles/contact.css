@@ -1,0 +1,51 @@
+.contact-form {
+    max-width: 20%;
+/* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+} 
+
+.contact-me {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+ input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ textarea {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: vertical;
+    max-height: 300px;
+    min-height: max-content;
+    background-color: transparent;
+    justify-items: center;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 700ms ease;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: blue;
+}
