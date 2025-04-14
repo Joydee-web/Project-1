@@ -49,3 +49,130 @@
 .button:hover {
     background-color: blue;
 }
+
+/* header starts here */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin: 120px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+    box-shadow: rgb(72, 70, 70) 0px 2px 150px;
+    position: sticky;
+    color: white;
+    top: 0;
+    z-index: 9999;
+    font-size: 23px;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 17px;
+    /* font-weight: 200; */
+    letter-spacing: 0.7px;
+    color: white;
+}
+
+header nav a {
+    color: white;
+    transition: all 500ms ease;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'pacifico', cursive
+}
+
+.nife {
+    font-family: 'pacifico', cursive;
+}
+
+header nav a:hover {
+    background-color: blueviolet;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(to right bottom, purple, blue);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home-name{
+    font-size: 25px;
+    font-family: 'pacifico', cursive;
+    color: white;
+}
+
+.home-web-dev{
+    font-size: 15px;
+    font-family: 'pacifico', cursive;
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: blueviolet;
+    font-weight: bold;
+    font-family: 'pacifico', cursive;
+}
+
+section{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.div1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.about-me img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: fit-content;
+    border: 1px solid purple;
+}
+
+.about-me p{
+    font-family: 'pacifico', cursive;
+}
+
+.personal-project p{
+    font-family: 'pacifico', cursive;
+}
+
+.div2 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    max-width: fit-content;
+}
+
+.div2{
+    display: flex;
+     /* flex-wrap: wrap; */
+    flex-direction: column; 
+}
