@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="all">
+    <div id="imageContainer"></div>
+    <p id="demo">...</p>
+    <div id="joy">
+        <p id="imagelogo">
+  <img src="./images/logo.png.jpg" 
+  style="width: 30px; height: 5vh; vertical-align: middle;">
+  Microsoft
+    </p>
+        <h1 id="p2">Educator Center</h1>
+    </div>
+</div>
+    <script>
+        document.getElementById("all").style.backgroundColor = "orange"
+        document.getElementById("demo").style.backgroundColor = "orange"
+        document.getElementById("demo").style.padding = "5px"
+        document.getElementById("demo").style.margin = "0px"
+        document.getElementById("joy").style.backgroundColor = "purple" 
+        document.getElementById("joy").style.color = "white"
+        document.getElementById("joy").style.padding = "20px 15px"
+        document.getElementById("imagelogo").style.textAlign = "center"
+        document.getElementById("p2").style.textAlign = "center"
+        document.getElementById("p2").style.fontFamily = "Arial"
+        document.getElementById("p2").style.fontSize = "larger"
+    </script>
+    <script>
+        const imageContainer = document.getElementById("imageContainer");
+        let newImg = document.createElement('img');
+        newImg.src = "./images/java.jpg"
+        newImg.style.width = "100%"
+        newImg.style.height = "100vh"
+
+
+         imageContainer.appendChild(newImg)
+    </script>
+    <script>
+        //   const imagelogo = document.getElementById("imagelogo");
+        // let logo = document.createElement('img');
+        // logo.src = "./images/logo.png.jpg"
+        // logo.style.width = "30px"
+        // logo.style.height = "5vh"
+        // imagelogo.appendChild(logo)
+    // </script>
+</body>
+</html>

@@ -1314,3 +1314,11 @@ footer div h2 {
 .comment-button:hover {
     background-color: rgb(106, 165, 60);
 }
+
+@media screen and (max-width: 700px) {
+    .nw-detail {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

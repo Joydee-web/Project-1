@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form onsubmit="return Validate()">
+        <div>
+            <label for="username">Username</label>
+            <input id="p1" type="text" name="full-name" value="">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="p2" type="password" name="password"> 
+        </div>
+        <div>
+            <button class="button" type="submit">Submit</button>
+        </div>
+        
+    </form>
+    <script>    
+        function Validate () {
+            let username = document.getElementById("p1").value;
+            let password = document.getElementById("p2").value;
+        if(username == "" && password == "") {
+            alert("error")
+        } else if (username == "name" && password == "digit") {
+            alert("login successful");
+        } else if (password.length < 5) {
+            alert("incorect password");
+        } else if (password.length > 10) {
+            alert("correct password");
+        } else {
+            alert("sharp!")
+        }
+        return false;
+        }
+    </script>
+
+    <h2>JavaScript For Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+const person = ["Joy", "Olupayimo", 25];
+
+const num = 25;
+let text = '';
+for (let i = 0; i < person.length; i++) {
+    text += person[i];
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>

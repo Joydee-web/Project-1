@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <p id="p2"></p>
+    <script>
+        const car = ["Volvo", "Toyota", "BMw", "Ford", "lexus", "Tesla", "Benz"];
+
+        let text = "";
+        for(let i = 0; i < car.length; i++){
+            text += car[i] + "<br>";
+        }
+        document.getElementById("p2").innerHTML = text;
+
+       // Functions in javascript
+       function Total(){
+            return 3 * 8 / 10;
+       }
+
+       function additon3number(a,b,c){
+          console.log(a + b + c / 3)
+       }
+
+       additon3number(4, 6, 10)
+
+      console.log( Total())
+    </script>
+</body>
+</html>
